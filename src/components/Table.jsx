@@ -3,7 +3,7 @@ import DataTable from "./DataTable";
 function Table({ data }) {
   return (
     <div>
-      <table border={1}>
+      <table>
         <thead>
           <tr>
             <th>ลำดับ</th>

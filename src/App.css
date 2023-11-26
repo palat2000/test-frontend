@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.layout {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 50px;
+  background-color: black;
+  transition: all 1s;
+  height: 100%;
+}
+
+.sidebar:hover {
+  width: 150px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.header {
+  height: 50px;
+  background-color: #2cabe3;
+  display: flex;
+  justify-content: end;
+  padding: 0 10px;
+}
+
+.right-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  background-color: #edf1f5;
+  flex: 1;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow: scroll;
+}
+
+.loading-background {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.159);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar {
+  background-color: white;
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+table {
+  width: 100%;
+  height: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+.pagination {
+  display: flex;
+  gap: 2px;
+  flex-wrap: wrap;
+}
+
+.page-button {
+  padding: 5px;
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+.active {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+}
